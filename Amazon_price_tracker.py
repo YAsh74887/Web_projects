@@ -25,7 +25,7 @@ text=f"Subject:Price Alert!!!\n\nYour product is avalible for DISCOUNT current p
 
 
 
-if result == "₹399.00":
+if result < "₹399.00":
   connection = smtplib.SMTP("smtp.gmail.com", 587)
   connection.starttls()
   connection.login(user_id, password)
